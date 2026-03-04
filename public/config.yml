@@ -1,0 +1,99 @@
+# Replace YOUR_GITHUB_USERNAME and YOUR_REPO with your actual GitHub username and repo name.
+# For local testing only, you can temporarily use: name: test-repo (you won't be able to save).
+backend:
+  name: github
+  repo: KevBrinkley/blog
+  branch: main
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  # Short Twitter-style feed items (left column on home page)
+  - name: feed-items
+    label: Feed Items
+    folder: content/feed-items
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Content, name: body, widget: text }
+      - { label: Date, name: date, widget: datetime }
+
+  # Long-form articles by section
+  - name: work
+    label: Work
+    folder: content/work
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Excerpt, name: excerpt, widget: text }
+      - { label: Date, name: date, widget: datetime }
+      - { label: Pinned, name: pinned, widget: boolean, default: false }
+      - { label: Image, name: image, widget: image, required: false }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: golf
+    label: Golf
+    folder: content/golf
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Excerpt, name: excerpt, widget: text }
+      - { label: Date, name: date, widget: datetime }
+      - { label: Pinned, name: pinned, widget: boolean, default: false }
+      - { label: Image, name: image, widget: image, required: false }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: wine
+    label: Wine
+    folder: content/wine
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Excerpt, name: excerpt, widget: text }
+      - { label: Date, name: date, widget: datetime }
+      - { label: Pinned, name: pinned, widget: boolean, default: false }
+      - { label: Image, name: image, widget: image, required: false }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: adventure
+    label: Adventure
+    folder: content/adventure
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Excerpt, name: excerpt, widget: text }
+      - { label: Date, name: date, widget: datetime }
+      - { label: Pinned, name: pinned, widget: boolean, default: false }
+      - { label: Image, name: image, widget: image, required: false }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: music
+    label: Music
+    folder: content/music
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Excerpt, name: excerpt, widget: text }
+      - { label: Date, name: date, widget: datetime }
+      - { label: Pinned, name: pinned, widget: boolean, default: false }
+      - { label: Image, name: image, widget: image, required: false }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: feed
+    label: Feed (long-form)
+    folder: content/feed
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Excerpt, name: excerpt, widget: text }
+      - { label: Date, name: date, widget: datetime }
+      - { label: Pinned, name: pinned, widget: boolean, default: false }
+      - { label: Image, name: image, widget: image, required: false }
+      - { label: Body, name: body, widget: markdown }

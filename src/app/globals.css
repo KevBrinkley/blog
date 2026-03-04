@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --paper: #f5f0e8;
+  --ink: #1a1814;
+  --accent: #c45c3e;
+  --mute: #6b6560;
+  --border: #e0d9cf;
+}
+
+body {
+  @apply bg-paper text-ink font-sans antialiased;
+}
+
+/* Horizontal scrollbar styling for pinned tiles */
+.scroll-tiles::-webkit-scrollbar {
+  height: 6px;
+}
+.scroll-tiles::-webkit-scrollbar-track {
+  @apply bg-border/50 rounded-full;
+}
+.scroll-tiles::-webkit-scrollbar-thumb {
+  @apply bg-mute/40 rounded-full;
+}
+.scroll-tiles::-webkit-scrollbar-thumb:hover {
+  @apply bg-mute/60;
+}

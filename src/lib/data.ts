@@ -1,0 +1,107 @@
+import type { Post, FeedItem } from "./types";
+
+export const PINNED_POSTS: Post[] = [
+  {
+    id: "p1",
+    section: "work",
+    title: "How I Ship",
+    excerpt: "My process for getting things out the door.",
+    slug: "how-i-ship",
+    date: "2025-02-20",
+    pinned: true,
+    image: "/images/pinned-1.jpg",
+  },
+  {
+    id: "p2",
+    section: "golf",
+    title: "Favorite 9",
+    excerpt: "The nine holes I keep coming back to.",
+    slug: "favorite-9",
+    date: "2025-02-18",
+    pinned: true,
+    image: "/images/pinned-2.jpg",
+  },
+  {
+    id: "p3",
+    section: "wine",
+    title: "House Reds",
+    excerpt: "Bottles we always have on hand.",
+    slug: "house-reds",
+    date: "2025-02-15",
+    pinned: true,
+    image: "/images/pinned-3.jpg",
+  },
+  {
+    id: "p4",
+    section: "adventure",
+    title: "Weekend in the Sierras",
+    excerpt: "Quick escape to the mountains.",
+    slug: "weekend-sierras",
+    date: "2025-02-10",
+    pinned: true,
+    image: "/images/pinned-4.jpg",
+  },
+  {
+    id: "p5",
+    section: "feed",
+    title: "Why I Blog",
+    excerpt: "Putting thoughts out there.",
+    slug: "why-i-blog",
+    date: "2025-02-05",
+    pinned: true,
+    image: "/images/pinned-5.jpg",
+  },
+];
+
+export const ALL_POSTS: Post[] = [
+  ...PINNED_POSTS,
+  {
+    id: "1",
+    section: "work",
+    title: "Remote Rituals",
+    excerpt: "Morning routine that actually sticks when you work from home.",
+    slug: "remote-rituals",
+    date: "2025-02-22",
+  },
+  {
+    id: "2",
+    section: "golf",
+    title: "Driver Fitting Notes",
+    excerpt: "What I learned getting fit for a new driver.",
+    slug: "driver-fitting",
+    date: "2025-02-19",
+  },
+  {
+    id: "3",
+    section: "wine",
+    title: "Natural Wine 101",
+    excerpt: "A few bottles that got me into the category.",
+    slug: "natural-wine-101",
+    date: "2025-02-16",
+  },
+  {
+    id: "4",
+    section: "adventure",
+    title: "Desert Camping Gear",
+    excerpt: "What we bring for a night under the stars.",
+    slug: "desert-camping-gear",
+    date: "2025-02-12",
+  },
+  {
+    id: "5",
+    section: "work",
+    title: "Meetings vs Async",
+    excerpt: "When to call, when to write.",
+    slug: "meetings-vs-async",
+    date: "2025-02-08",
+  },
+];
+
+export const FEED_ITEMS: FeedItem[] = [
+  { id: "f0", content: "AI allows you to build prototypes just like sculpting a next gen car. It allows you to freely invision what could be.", date: "2025-02-27T10:00:00Z" },
+  { id: "f1", content: "AI is like wood working. Just because the ability to build your own custom cabinet is out there doesn't mean everyone is going to do it.", date: "2025-02-26T10:30:00Z" },
+  { id: "f2", content: "18 holes in under 4 hours. Still possible.", date: "2025-02-25T15:00:00Z" },
+  { id: "f3", content: "That bottle of Côte-Rôtie was worth the wait.", date: "2025-02-24T19:45:00Z" },
+  { id: "f4", content: "Early morning trail run > sleeping in. Fight me.", date: "2025-02-23T07:00:00Z" },
+  { id: "f5", content: "Deep work block: no Slack, no email. Just code.", date: "2025-02-22T14:00:00Z" },
+];
