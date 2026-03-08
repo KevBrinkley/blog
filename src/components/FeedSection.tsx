@@ -20,7 +20,7 @@ export function FeedSection({ items }: FeedSectionProps) {
     <ul className="space-y-0 divide-y divide-border">
       {items.map((item) => (
         <li key={item.id} className="py-4 first:pt-0">
-          <p className="text-base text-ink">{item.content}</p>
+          <p className="text-[1rem] text-ink">{item.content}</p>
           <time
             dateTime={item.date}
             className="mt-1 block text-xs text-mute"

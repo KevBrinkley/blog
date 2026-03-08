@@ -1,4 +1,4 @@
-export type SectionId = "feed" | "work" | "golf" | "wine" | "adventure" | "music" | "about";
+export type SectionId = "feed" | "work" | "golf" | "wine" | "adventure" | "music" | "all" | "about";
 
 export interface Post {
   id: string;
@@ -26,5 +26,6 @@ export const SECTIONS: { id: SectionId; label: string }[] = [
   { id: "wine", label: "Wine" },
   { id: "adventure", label: "Adventure" },
   { id: "music", label: "Music" },
+  { id: "all", label: "All" },
   { id: "about", label: "About" },
 ];

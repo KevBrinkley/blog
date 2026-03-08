@@ -36,10 +36,10 @@ export function RecentPosts({ posts }: RecentPostsProps) {
               href={href}
               className="group block rounded-lg border border-border/60 bg-paper/50 p-3 transition-colors hover:border-accent hover:bg-white/50"
             >
-              <h3 className="font-display text-base font-semibold text-ink group-hover:text-accent">
+              <h3 className="font-display text-[1.2rem] font-semibold text-ink group-hover:text-accent">
                 {post.title}
               </h3>
-              <p className="mt-0.5 line-clamp-2 text-xs text-mute">
+              <p className="mt-0.5 line-clamp-2 text-[1rem] text-mute">
                 {post.excerpt}
               </p>
               <span className="mt-1.5 block text-xs text-mute">
